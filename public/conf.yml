@@ -45,6 +45,13 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
+  - name: Github Profile Stats
+    widgets:
+      - type: github-profile-stats
+        options:
+          username: srikanth-iyengar
+          hideLanguagesCard: true
+          repos: []
   - name: Personal Projects
     icon: https://cdn-icons-png.flaticon.com/512/25/25231.png
     displayData:
