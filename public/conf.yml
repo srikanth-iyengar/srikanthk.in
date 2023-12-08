@@ -1,47 +1,238 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Srikanth Iyengar
+  description: Welcome to my homelab
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: GitHub
+      path: https://github.com/srikanth-iyengar/homelab
+      target: newtab
+    - title: Documentation
+      path: https://dashy.to/docs
+      target: newtab
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: lissy
+  layout: auto
+  iconSize: large
+  language: en
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Personal Sites
+    icon: fas fa-rocket
+    items:
+      - &ref_0
+        title: srikanthk.in
+        description: My Developer Dashboard
+        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+        url: https://live.dashy.to/
+        target: newtab
+        id: 0_1388_srikanthkin
+      - &ref_1
+        title: GitHub
+        description: My Github Profile
+        icon: favicon
+        url: https://github.com/srikanth-iyengar/homelab
+        target: newtab
+        id: 1_1388_github
+      - &ref_2
+        title: Linkedin
+        description: Connect with me on linkedin
+        icon: https://cdn-icons-png.flaticon.com/256/174/174857.png
+        url: https://www.linkedin.com/in/srikanth-iyengar-73b32620b/
+        target: newtab
+        id: 2_1388_linkedin
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+  - name: Personal Projects
+    icon: https://cdn-icons-png.flaticon.com/512/25/25231.png
+    displayData:
+      sortBy: alphabetical
+      rows: 3
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_13
+        title: Datahive
+        description: End to end data pipeline framework
+        icon: https://www.accessible-astro.dev/_astro/logo.7a72b47d_Z1BrWpc.svg
+        url: https://github.com/srikanth-iyengar/datahive
+        target: newtab
+        id: 0_1710_datahive
+      - &ref_14
+        title: Homelab
+        description: Automated Self Hostable Infrastructure
+        icon: https://thehomelab.wiki/uploads/images/system/2021-06/4956186.png
+        url: https://github.com/srikanth-iyengar/homelab
+        target: newtab
+        id: 1_1710_homelab
+      - &ref_15
+        title: Asyph
+        description: Online Coding Contest Platform
+        icon: >-
+          https://raw.githubusercontent.com/srikanth-iyengar/asyph/main/docs/images/logo.png
+        url: https://github.com/srikanth-iyengar/asyph
+        target: newtab
+        id: 2_1710_asyph
+    filteredItems:
+      - *ref_13
+      - *ref_14
+      - *ref_15
+  - name: Dev Tools
+    icon: https://cdn-icons-png.flaticon.com/512/1329/1329016.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_3
+        title: Jenkins
+        description: Jenkins CI Server
+        icon: https://jenkins.srikanthk.in/favicon.ico
+        url: https://jenkins.srikanthk.in/login?from=%2F
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://jenkins.srikanthk.in/login?from=%2F
+        id: 0_848_jenkins
+      - &ref_4
+        title: Ntfy
+        description: Notification Service
+        icon: https://ntfy.srikanthk.in/static/media/ntfy-d7abf07b.svg
+        url: https://ntfy.sriknathk.in
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://ntfy.srikanthk.in
+        id: 1_848_ntfy
+      - &ref_5
+        title: SonarQube
+        description: Static Code Analyzer
+        icon: https://sonar.srikanthk.in/favicon.ico
+        url: https://sonar.srikanthk.in
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://sonar.srikanthk.in/sessions/new?return_to=%2F
+        id: 2_848_sonarqube
+    filteredItems:
+      - *ref_3
+      - *ref_4
+      - *ref_5
+  - name: Observability Suite
+    icon: >-
+      https://www.splunk.com/content/dam/splunk2/images/icon-library/standard/monitoring-and-diagnostics.svg
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_6
+        title: Litmus Frontend
+        description: Cloud Native Chaos Engineering Platform
+        icon: https://litmus.srikanthk.in/favicon.ico
+        url: https://litmus.srikanthk.in
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://litmus.srikanthk.in/login
+        id: 0_1929_litmusfrontend
+      - &ref_7
+        title: Litmus Backend
+        description: Backend for litmus chaos platform
+        icon: ' https://cdn.jsdelivr.net/npm/graphql-playground-react@1.7.20/build/favicon.png'
+        url: https://litmus-server.srikanthk.in
+        target: newtab
+        statusCheck: true
+        id: 1_1929_litmusbackend
+    filteredItems:
+      - *ref_6
+      - *ref_7
+  - name: Productivity Sites
+    icon: https://cdn-icons-png.flaticon.com/512/4515/4515017.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_8
+        title: Firefly
+        description: Personal Finance Manager
+        icon: https://firefly.srikanthk.in/favicon.ico
+        url: https://firefly.srikanthk.in
+        target: newtab
+        statusCheckUrl: https://firefly.srikanthk.in/login
+        statusCheck: true
+        id: 0_1854_firefly
+      - &ref_9
+        title: Booksack
+        description: Personal Knowledge Base Platform
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/BookStack_logo.svg/800px-BookStack_logo.svg.png
+        url: https://bookstack.srikanthk.in
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://bookstack.srikanthk.in/login
+        id: 1_1854_booksack
+    filteredItems:
+      - *ref_8
+      - *ref_9
+  - name: Monitoring Sites
+    icon: https://cdn-icons-png.flaticon.com/512/3703/3703300.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_10
+        title: Grafana
+        description: Monitoring Dashboarding tool
+        icon: https://grafana.srikanthk.in/public/img/grafana_icon.svg
+        url: https://grafana.srikanthk.in
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://grafana.srikanthk.in/login
+        id: 0_1614_grafana
+      - &ref_11
+        title: Prometheus
+        description: TSDB for log analysis
+        icon: https://prometheus.srikanthk.in/favicon.ico
+        url: https://prometheus.srikanthk.in
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://prometheus.srikanthk.in/graph
+        id: 1_1614_prometheus
+    filteredItems:
+      - *ref_10
+      - *ref_11
+  - name: Authentication Providers
+    icon: https://cdn-icons-png.flaticon.com/512/1791/1791961.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_12
+        title: Keycloak
+        description: Open source IAM Provider
+        icon: >-
+          https://keycloak.srikanthk.in/resources/rv87t/welcome/keycloak/img/favicon.ico
+        url: https://keycloak.srikanthk.in
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://keycloak.srikanthk.in/
+        id: 0_2462_keycloak
+    filteredItems:
+      - *ref_12
+
