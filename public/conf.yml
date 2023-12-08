@@ -10,6 +10,9 @@ appConfig:
   layout: auto
   iconSize: large
   language: en
+  hideComponents:
+    - settings
+    - footer
 sections:
   - name: Personal Sites
     icon: fas fa-rocket

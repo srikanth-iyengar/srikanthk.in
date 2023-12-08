@@ -95,7 +95,7 @@ export default {
       const encode = (str) => encodeURIComponent(str);
       this.statusResponse = undefined;
       // Find base URL, where the API is hosted
-      const baseUrl = process.env.VUE_APP_DOMAIN || window.location.origin;
+      // const baseUrl = process.env.VUE_APP_DOMAIN || window.location.origin;
       // Find correct URL to check, and encode
       const urlToCheck = `?&url=${encode(statusCheckUrl || url)}`;
       // Get, stringify and encode any headers
@@ -106,7 +106,7 @@ export default {
       const acceptCodes = statusCheckAcceptCodes ? `&acceptCodes=${statusCheckAcceptCodes}` : '';
       const maxRedirects = statusCheckMaxRedirects ? `&maxRedirects=${statusCheckMaxRedirects}` : '';
       // Construct the full API endpoint's URL with GET params
-      return `${baseUrl}${serviceEndpoints.statusCheck}/${urlToCheck}`
+      return `${serviceEndpoints.statusCheck}/${urlToCheck}`
         + `${headers}${enableInsecure}${acceptCodes}${maxRedirects}`;
     },
     customStyle() {

@@ -39,7 +39,7 @@ module.exports = {
   /* Server Endpoints */
   serviceEndpoints: {
     statusPing: '/status-ping',
-    statusCheck: '/status-check',
+    statusCheck: 'https://worker-throbbing-pond-03fa.ksrikanth3012.workers.dev/status-check',
     save: '/config-manager/save',
     rebuild: '/config-manager/rebuild',
     systemInfo: '/system-info',
