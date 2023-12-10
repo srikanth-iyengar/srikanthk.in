@@ -6,7 +6,7 @@ pageInfo:
       path: https://github.com/srikanth-iyengar/homelab
       target: newtab
 appConfig:
-  theme: lissy
+  theme: argon
   layout: auto
   iconSize: large
   language: en
@@ -21,7 +21,7 @@ sections:
         title: srikanthk.in
         description: My Developer Dashboard
         icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-        url: https://live.dashy.to/
+        url: https://srikanthk.in/
         target: newtab
         id: 0_1388_srikanthkin
       - &ref_1
@@ -56,7 +56,7 @@ sections:
           hideLanguagesCard: true
           repos: []
   - name: Personal Projects
-    icon: https://cdn-icons-png.flaticon.com/512/25/25231.png
+    icon: https://w7.pngwing.com/pngs/857/611/png-transparent-github-git-hub-logo-icon-thumbnail.png
     displayData:
       sortBy: alphabetical
       rows: 1
@@ -179,14 +179,14 @@ sections:
         statusCheck: true
         id: 0_1854_firefly
       - &ref_9
-        title: Booksack
+        title: Codimd
         description: Personal Knowledge Base Platform
         icon: >-
-          https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/BookStack_logo.svg/800px-BookStack_logo.svg.png
-        url: https://bookstack.srikanthk.in
+          https://artifacthub.io/image/1df304c6-d1b7-4443-825d-2a239b3a0154@2x
+        url: https://codimd.srikanthk.in
         target: newtab
         statusCheck: true
-        statusCheckUrl: https://bookstack.srikanthk.in/login
+        statusCheckUrl: https://codimd.srikanthk.in
         id: 1_1854_booksack
     filteredItems:
       - *ref_8
@@ -234,7 +234,7 @@ sections:
         title: Keycloak
         description: Open source IAM Provider
         icon: >-
-          https://keycloak.srikanthk.in/resources/rv87t/welcome/keycloak/img/favicon.ico
+          https://static-00.iconduck.com/assets.00/keycloak-icon-512x512-jss2rqxz.png
         url: https://keycloak.srikanthk.in
         target: newtab
         statusCheck: true
